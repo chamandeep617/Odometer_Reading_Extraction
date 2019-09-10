@@ -8,3 +8,9 @@ This repository is basically build to read the odometer reading from the image o
 ## STEPS TO JUST TEST THIS PROJECT ON YOUR IMAGES:-
 ##### 1. clone this repo in your system.
 ##### 2. and change your directory to this cloned repo in the cmd , after that just run this command "python test_frcnn.py -p (PATH TO IMAGES YOU WANT TO TEST)"
+## STEPS TO TRAIN THIS PROJECT ON YOUR IMAGES:-
+##### 1. First of all open "prepare_annotate_file.py" in the cloned repo and provide your opoath in the dataset_dir = "YOUR PATH TO THE FOLDER CONTAINING IMAGES AND LABELS FOLDER", you are also supposed to change "label_dir" and "img_names" few lines below the "dataset_dir". After making changes just run this python file in the cmd.
+##### 2. After this we are ready to now tready to train this model on the our images. for this simply run this command in the cmd "python train_frcnn.py -o simple -p annotate.txt"
+##### 3. it will take large amount of time ,but once it is trained it ready to predict numbers in the image.
+##### 4. in order to test the model on the image just this commend in the cmd "python test_frcnn.py -p (PATH TO THE IMAGES YOUR WANT TO TEST)".
+
