@@ -1,5 +1,7 @@
 # Odometer_Reading_Extraction
 This repository is basically build to read the odometer reading from the image of any vehicle meter. 
+
+#### NOTE :- Please note that while cloning this repo please download the pre-trained weights using this link https://drive.google.com/file/d/1msPPXKcNly-uZW8oKFJ0wsTw2fWZPI6h/view?usp=sharing and paste it in the cloned repo folder
 ## Steps in which this project is build:-
 ##### 1.First of all the we are provided with the images and their corresponding labels, labels are basically xml and text files containing the digits in the image( let us assume these as the classes ) and their xmin,ymin,xmax,ymax values.\n
 ##### 2.Now the main issue why we cant just simply use ocr is that the odometer reading are in the seven segmented figure, so ocr generally not works on it.
@@ -14,3 +16,4 @@ This repository is basically build to read the odometer reading from the image o
 ##### 3. it will take large amount of time ,but once it is trained it ready to predict numbers in the image.
 ##### 4. in order to test the model on the image just this commend in the cmd "python test_frcnn.py -p (PATH TO THE IMAGES YOUR WANT TO TEST)".
 
+## For the time being now this project is built till the identificaiton of the numbers in the image but soon it will be updated to extract the odometer part
